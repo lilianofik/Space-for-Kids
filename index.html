@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset = "utf-8">
+        <title>Space For Kids</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap" rel="stylesheet">
+        
+    <style>
+        
+        body{width:100vw;
+            height:100vh;
+            padding:0;
+            margin:0;
+            background-color:#f5b1fa;}
+        
+        header{overflow: hidden;
+              background-color:#a832a4;
+              position:fixed;
+              top:0;
+              width: 100%;}
+        
+        nav ul{float:right;
+               width:65%;}
+        
+        nav ul li{list-style-type:none;
+                  display:inline;
+                  margin-right:1.5em;}
+        
+        nav a{text-decoration:none;
+              font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+              font-weight:800;
+              text-transform:uppercase;
+              font-size:1.5em;
+              padding:1.5%;
+              letter-spacing:4%;}
+        
+        nav a:link{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                   color:#ffd359;}
+        
+        nav a:visited{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                      color:#fff;}
+        
+        nav a:hover{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                    color:darkorchid;
+                    background-color:peachpuff;}
+        
+        nav a:active{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                     color:darkgreen;}
+        
+        #banner{background-image:url(useit_img.png);}
+        
+        #banner h1{color:#fff;
+                   font-family:"Rum Raisin","Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                    padding:15%;
+                    margin-top:0;
+                    text-align:center;
+                    font-size:4em;
+                    text-transform:uppercase;
+                    letter-spacing:0.3em;
+                    text-shadow:5em 5em 20em purple;}
+        
+        article{background-image: url(solarrr_img.jpg);
+                background-repeat:no-repeat;
+                background-size:cover;
+                width:100%;
+                padding-top:10%;
+                padding-bottom:40%;
+                margin-bottom:10%;}
+        
+    article h2{font-family:"Black And White Picture","Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                   text-transform:uppercase;
+                   text-align:center;
+                   letter-spacing:0.1em;
+                   text-shadow:0 0 4em purple;
+                   font-size:4em;
+                   color:#fff;}
+        
+        article #left{float:left;
+                      width:47%;
+                      font-family:"Rum Raisin","Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                      font-size:130%;
+                      color:#fff;
+                      text-shadow:0 0 1em purple;
+                      text-align:justify;
+                      padding-left:1.6%;
+                      line-height:2em;}
+        
+        article #right{float:right;
+                       width:47%;
+                       font-family:"Rum Raisin","Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                       font-size:130%;
+                       color:#fff;
+                       text-shadow:0 0 1em purple;
+                       text-align:justify;
+                       padding-right:1.6%;
+                       line-height:1.8em;}
+        
+        .row{clear:both;}
+        
+        .row h2{font-size:4em;
+                font-family:"Black And White Picture", sans-serif;
+                color:#8a3700;
+                border-top-style:solid;
+                border-width:thick;
+                letter-spacing:0.2em;
+                text-transform:uppercase;}
+        
+        
+        .cartoongal{float:right;
+                    margin-right:-2%;
+                    padding-right:3%;
+                    padding-top:6%;}
+        
+        .col1{float:left;
+              text-align:justify;
+              width:60%;
+              font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+              font-size:140%;
+              line-height:1.3em;
+              letter-spacing:0.1em;
+              padding-right:0.2%;
+              color:#fff;
+              text-shadow:0 0 .7em purple;}
+        
+        .col2{float:right;
+              width:60%;
+              font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+              font-size:140%;
+              line-height:1.3em;
+              letter-spacing:0.1em;
+              color:#fff;
+              text-shadow:0 0 .7em purple;}
+        
+        #alien{float:left;
+               width:40%;}
+        
+        #solar{text-align:right;}
+        
+        main{float:right;
+             width:85%;
+             margin:0 0.3% 0 0.2%;}
+        
+        aside{float:left;
+              width:13%;
+              margin:0 0.2% 0 0;
+              background-color:#54117d;
+              border-style:outset;
+              border-color:black;}
+        
+        aside h1{font-family:"Rum Raisin","Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                 padding-left:2%;
+                 text-decoration:overline;
+                 color:#fff;
+                 text-shadow:0 0 .7em purple;}
+        
+        aside ul{list-style-type:none;
+                margin-left:22%;
+                padding:0;}
+        
+        aside ul li{margin-bottom:10%;}
+        
+        aside ul li a{display:block;
+                      width:50%;
+                      text-align:center;
+                      text-decoration:none;
+                      font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                      font-size:1.5em;
+                      border-style:solid;
+                      border-bottom-right-radius:50px 20px;
+                      border-bottom-left-radius:50px 20px;
+                      padding:10%;}
+        
+        aside ul li a:link{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                            color:#fff;}
+        
+        aside ul li a:visited{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                                color:#ffd359;}
+        
+        aside ul li a:hover{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                            color:darkorchid;
+                            background-color:peachpuff;}
+        
+        aside ul li a:active{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                            color:darkgreen;}
+        
+        footer{background-color:#a832a4;}
+        
+        footer a{text-decoration:none;
+                font-size:2em;
+                font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                padding-left:2%;
+                color:#fff;}
+        
+        footer p{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                color:#fff;
+                font-size:1.5em;
+                padding-left:2%;}
+        
+    </style>
+        
+    </head>
+
+    <body>
+        
+        <header>
+         <nav>
+                <ul>
+                    <li><a href = "planets/planets.html" target = "_blank">Planets</a></li>
+                    <li><a href = "dwarf planets/dwarfplanets.html" target = "_blank">Dwarf Planets</a></li>
+                    <li><a href = "STARS/stars.html" target = "_blank">Stars</a></li>
+                    <li><a href = "Black Holes/blackholes.html" target = "_blank"> Black Hole </a></li>
+                    <li><a href = "Other Planetary Bodies/asteroids.html" target = "blank"> Asteroids</a></li>
+                    <li><a href = "Other Planetary Bodies/comets.html" target = "blank"> Comets</a></li>
+                    <li><a href = "Other Planetary Bodies/meteors_and_meteorites.html" target = "blank">Meteors</a></li>
+                </ul>
+            </nav>
+       </header>
+        
+        <div id="banner">
+            <h1>The Evolution of the Universe </h1>
+        </div>
+        
+        <aside>
+            <h1>What's on this page?</h1>
+
+            <ul>
+                <li><a href = "#uni">UNIVERSE</a></li>    
+                <li><a href = "#galaxy">GALAXY </a></li>  
+                <li><a href = "#solar">SOLAR SYSTEM</a></li>  
+            </ul>
+        </aside>
+        
+        <main>
+            
+        <article id="uni">
+            <h2>The Universe</h2>
+
+            <div class="row">
+                <p id="left"> The Universe is everything that exists, including the galaxies, all physical matter present in the galaxies like the stars and planets in space. At a particular instant roughly 15 billion years ago, all the matter and energy we can observe, concentrated in a region smaller than a dime, began to expand and cool at an incredibly rapid rate. After the universe had grown by another factor of 1,000, protons and neutrons combined to form atomic nuclei, including most of the helium and deuterium present today. By the time the universe had expanded to one fifth its present size, the stars had formed groups recognizable as young galaxies.</p>
+
+                <p id="right">The present-day universe has provided ample opportunity for the development of life as we know it—there are some 100 billion billion stars similar to the sun in the part of the universe we can observe. Thirty billion years from now, galaxies will be much darker and filled with dead or dying stars, so there will be far fewer planets capable of supporting life as it now exists. In the near future, we expect new experiments to provide a better understanding of the big bang. The larger telescopes recently completed or under construction may allow us to see how the mass of the universe affects the curvature of spacetime, which in turn influences our observations of distant galaxies.</p>
+                
+            </div>
+            
+        </article>     
+             
+            <div class="row"> 
+                <h2 id="galaxy">Our Galaxy</h2>    
+                 <p class="col1">
+                    Our galaxy is called The Milky Way and it got it's name from it's milky appearance as it stretches across the sky. The Milky Way Galaxy is most significant to humans because it is home sweet home. But when it comes down to it, our galaxy is a typical barred spiral, much like billions of other galaxies in the universe. The Milky Way is a barred spiral galaxy, about 100,000 light-years across. The Milky Way also contains two significant minor arms, as well as two smaller spurs. One of the spurs, known as the Orion Arm, contains the sun and the solar system. The Orion arm is located between two major arms, Perseus and Sagittarius.</p> 
+                
+                     <img src="new_cartoon_galaxy.jpg" alt="Photo of the Milky Way" class="cartoongal">
+                
+                     <p class="col1">The Milky Way does not sit still, but is constantly rotating. At the center of the galaxy is the galactic bulge. Tucked inside the very center of the galaxy is a monstrous black hole, billions of times as massive as the sun. Galaxies like ours typically undergo a stellar baby boom, churning out stars in enormous quantities roughly 10 billion years ago. The most common stars in the galaxy are red dwarfs, a cool star about a tenth the mass of the sun. The Milky Way contains over 200 billion stars, and enough dust and gas to make billions more.</p>
+                    
+                </div>
+        
+            
+            <div class="row">
+                 <h2 id="solar">The Solar System</h2>
+            
+                <p class="col2">The planetary system we call home is located in an outer spiral arm of the Milky Way galaxy. The cloud collapsed, possibly due to the shockwave of a nearby exploding star, called a supernova. When this dust cloud collapsed, it formed a solar nebula—a spinning, swirling disk of material. Planets did not form: the asteroid belt is made of bits and pieces of the early solar system that could never quite come together into a planet. Other smaller leftover pieces became asteroids, comets, meteoroids, and small, irregular moons.ur solar system consists of our star, the Sun, and everything bound to it by gravity — the planets Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune, dwarf planets such as Pluto, dozens of moons and millions of asteroids, comets and meteoroids.</p>
+                  
+                <img src="new_alienn_image.png" alt="Photo of an Alien" id="alien">
+                    
+                <p class="col2">Beyond our own solar system, there are more planets than stars in night sky. The celestial bodies described which revolve around the solar system are; the sun, the planets, dwarf planets, dozens of moons and millions of asteroids, comets and meteoroids. Our solar system is the only place we know of that harbors life, but the farther we explore the more we find potential for life in other places. Both Jupiter’s moon Europa and Saturn’s moon Enceladus have global saltwater oceans under thick, icy shells.</p>
+                        
+                </div>
+            
+            </main>
+        
+        
+        <div class="row">
+            <footer>
+                <a href="#banner">Back to Top of Page &uarr;</a>
+                <p>Made by Lilian Ayile Ofik. 2020.</p>
+            </footer> 
+            
+        </div>
+        
+    </body>
+</html>

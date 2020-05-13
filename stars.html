@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset = "utf-8">
+        <title>Space For Kids|Stars</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap" rel="stylesheet">
+        
+        <style>
+        
+            body{width:100vw;
+                height:100vh;
+                padding:0;
+                margin:0;
+                color:#fff;
+                background-color:#000;}
+            
+            header{overflow: hidden;
+                   background-color:#a832a4;
+                   top:0;
+                   width: 100%;
+                   position:fixed;}
+        
+        header nav ul{float:right;
+                      width:75%;}
+        
+        header nav ul li{list-style-type:none;
+                  display:inline;
+                  margin-right:1.5em;}
+        
+        header nav a{text-decoration:none;
+                  font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                  font-weight:800;
+                  text-transform:uppercase;
+                  font-size:1.5em;
+                  padding:1.5%;
+                  letter-spacing:4%;}
+        
+        header nav a:link{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                   color:#ffd359;}
+        
+        header nav a:visited{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                      color:#fff;}
+        
+        header nav a:hover{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                    color:darkorchid;
+                    background-color:peachpuff;}
+        
+        header nav a:active{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                     color:darkgreen;}
+            
+        footer{background-color:#a832a4;
+               clear:both;
+               margin-top:2%;}
+        
+        footer a{text-decoration:none;
+                font-size:2em;
+                font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                padding-left:2%;
+                color:#fff;}
+        
+        footer p{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                color:#fff;
+                font-size:1.5em;
+                padding-left:2%;}
+            
+        h1{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+            font-size:5em;
+            text-align:center;
+            text-shadow:0 0 .7em black;
+            margin-bottom:0;
+            border-style:outset;
+            border-radius:50px;
+            border-width:thick;
+            background-color:#adadad;}
+            
+      main h2{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+           font-size:4em;
+           text-transform:uppercase;
+           border-style:outset;
+           border-radius:50px;
+           border-width:thick;
+           background-color:#5c5b58;
+           text-shadow:0 0 2em black;}
+            
+        .left{text-align:left;
+              padding-left:2%;}
+            
+        .right{text-align:right;
+               padding-right:2%;}
+            
+        #center{text-align:center;
+                background-color:#ffb914;
+                text-shadow:0 0 .7em orangered;
+                color:orangered;}
+            
+        main p{font-family:"Acme","Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+               text-align:justify;
+               font-size:1.3em;
+               line-height:1.6em;
+                text-shadow:10em 10em 20em #fff;}
+            
+        .toleft{float:left;
+                width:13%;
+                border-style:outset;
+                border-radius:50px;
+                background-color:#adadad;
+                margin-left:2%;
+                margin-right:2%;
+                margin-top:6%;
+                font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;}
+         
+        .toleft p{font-size:1.5em;
+                  text-align:center;
+                  color:#ffd359;
+                  text-shadow:0 0 .7em purple;}
+            
+        .toleft li{list-style-type:lower-roman;
+                   margin-bottom:2%;}
+            
+        .toleft a{display:block;
+                  text-decoration:none;
+                  font-size:1.3em;}
+            
+        main{float:left;
+             width:57%;
+             margin-top:3%;}
+        
+        .borders{border-style:inset;
+                 border-width:thick;
+                background-color:#96d979;
+                color:#fff;
+                padding:2%;}
+            
+        .borders p{text-shadow:0 0 .3em purple;}
+            
+        .toright{float:right;
+                width:20%;
+                border-style:outset;
+                border-radius:50px;
+                background-color:#adadad;
+                border-width:thick;
+                margin-right:2%;
+                margin-top:6%;}
+           
+         .toright p{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                   font-size:2em;
+                   text-transform:uppercase;
+                   text-align:center;
+                   text-shadow:0 0 .7em black;}
+            
+        img{border-style:outset;}
+            
+        figcaption{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                   font-size:1.5em;
+                   text-align:center;
+                   color:#6eff26;
+                   margin-top:2%;
+                   margin-bottom:2%;
+                   text-shadow:5em 5em 30em black;}
+            
+        #clear{clear:both;
+               width:100%;}
+            
+        #sun{background-color:#ffce59;
+             padding:0.5% 0;}
+         
+        #sun p{text-align:center;
+               text-shadow:0 0 .7em purple;}
+            
+        #super{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+               text-decoration:underline;
+               font-size:1.5em;
+               text-transform:uppercase;
+               letter-spacing:4%;}
+        
+        #super:link{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                    color:darkred;}
+        
+        #super:visited{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                      color:#000;}
+        
+        #super:hover{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                    color:darkorchid;
+                    background-color:peachpuff;}
+        
+        #super:active{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                     color:darkgreen;}
+            
+        aside nav li{list-style-type:none;}
+            
+        aside nav a{display:block;
+                  text-decoration:none;
+                  font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                  font-weight:800;
+                  text-transform:uppercase;
+                  font-size:1.5em;
+                  text-transform:0 0 1em purple;
+                  background-clip:content-box;
+                  letter-spacing:4%;}
+            
+        aside nav a:link{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                        color:#ffd359;}
+        
+        aside nav a:visited{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                            color:#a832a4;}
+        
+        aside nav a:hover{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                            color:darkorchid;
+                            background-color:peachpuff;}
+        
+        aside nav a:active{font-family:"Mouse Memoirs",Futura,"Arial Black","Trebuchet MS",Verdana,Arial,sans-serif;
+                            color:darkgreen;}
+        </style>
+        
+    </head>
+
+    <body>
+        
+        <header>
+         <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href = "../planets/planets.html" target = "_blank">Planets</a></li>
+                    <li><a href = "../dwarf planets/dwarfplanets.html" target = "_blank">Dwarf Planets</a></li>
+                    <li><a href = "stars.html" target = "_blank">Stars</a></li>
+                    <li><a href = "../Black Holes/blackholes.html" target = "_blank"> Black Hole </a></li>
+                    <li><a href = "../Other Planetary Bodies/asteroids.html" target = "blank"> Asteroids</a></li>
+                    <li><a href = "../Other Planetary Bodies/comets.html" target = "blank"> Comets</a></li>
+                    <li><a href = "../Other Planetary Bodies/meteors_and_meteorites.html" target = "blank">Meteors</a></li>
+                </ul>
+            </nav>
+       </header>
+        
+        <aside class="toleft">
+            <p>On This Page:</p>
+        
+            <ul>
+                <li><a href="#birth">Birth of Stars</a></li>
+                <li><a href="#bright">Brightness of Stars</a></li>
+                <li><a href="#death">Death of a Star</a></li>
+                <li><a href="#explosion">Star Explosion</a></li>
+                <li><a href="#center">Our Star</a></li>
+            </ul>
+        </aside>
+        
+        <main>
+        <h1 id="starbanner">Stars</h1>
+            
+            <p class="borders">Stars are huge celestial bodies made mostly of hydrogen and helium that produce light and heat from the churning nuclear forges inside their cores. Aside from our sun, the dots of light we see in the sky are all light-years from Earth. They are the building blocks of galaxies, of which there are billions in the universe. It’s impossible to know how many stars exist, but astronomers estimate that in our Milky Way galaxy alone, there are about 300 billion.</p>
+            
+             <figure> <img src ="stars_image.png" alt = "Photo of Stars"> 
+                <figcaption>
+                Photo of a group of stars in the sky.
+                </figcaption>
+            </figure>
+            
+        <h2 class="left" id="birth">Birth of a Star</h2>
+            
+        <div class="borders">
+            <p>The life cycle of a star spans billions of years. As a general rule, the more massive the star, the shorter its life span. Birth takes place inside hydrogen-based dust clouds called nebulae. Over the course of thousands of years, gravity causes pockets of dense matter inside the nebula to collapse under their own weight. One of these contracting masses of gas, known as a protostar, represents a star’s beginning phase. Because the dust in the nebulae obscures them, protostars can be difficult for astronomers to detect.</p>
+                
+            <p>As a protostar gets smaller, it spins faster because of the conservation of angular momentum—the same principle that causes a spinning ice skater to accelerate when she pulls in her arms. Increasing pressure creates rising temperatures, and during this time, a star enters what is known as the relatively brief T Tauri phase. Millions of years later, when the core temperature climbs to about 27 million degrees Fahrenheit (15 million degrees Celsius), nuclear fusion begins, igniting the core and setting off the next—and longest—stage of a star’s life, known as its main sequence.</p>
+
+            <p>Most of the stars in our galaxy, including the sun, are categorized as main sequence stars. They exist in a stable state of nuclear fusion, converting hydrogen to helium and radiating x-rays. This process emits an enormous amount of energy, keeping the star hot and shining brightly.</p>
+        </div>    
+
+        <h2 class="right" id="bright">The Brightness of a Star</h2>
+            
+            <div class="borders">
+            <p>Some stars shine more brightly than others. Their brightness is a factor of how much energy they put out–known as luminosity–and how far away from Earth they are. Color can also vary from star to star because their temperatures are not all the same. Hot stars appear white or blue, whereas cooler stars appear to have orange or red hues.</p>
+            </div>
+            
+        <h2 class="left" id="death">The 'Death' of a Star</h2>
+            
+        <div class="borders">
+            <p>As stars move toward the ends of their lives, much of their hydrogen has been converted to helium. Helium sinks to the star's core and raises the star's temperature—causing its outer shell of hot gases to expand. These large, swelling stars are known as red giants. But there are different ways a star’s life can end, and its fate depends on how massive the star is.</p>
+                
+            <p>The red giant phase is actually a prelude to a star shedding its outer layers and becoming a small, dense body called a white dwarf. White dwarfs cool for billions of years. Some, if they exist as part of a binary star system, may gather excess matter from their companion stars until their surfaces explode, triggering a bright nova. Eventually all white dwarfs go dark and cease producing energy. At this point, which scientists have yet to observe, they become known as black dwarfs.</p>
+        </div>
+
+        <h2 class="right" id="explosion">The Explosion of a Star</h2>
+            
+        <div class="borders">
+            <p>Massive stars eschew this evolutionary path and instead go out with a bang—detonating as supernovae. While they may appear to be swelling red giants on the outside, their cores are actually contracting, eventually becoming so dense that they collapse, causing the star to explode. These catastrophic bursts leave behind a small core that may become a neutron star or even, if the remnant is massive enough, a black hole.</p>
+                
+            <p>Because certain supernovae have a predictable pattern of destruction and resulting luminosity, astronomers are able to use them as “standard candles,” or astronomical measuring tools, to help them measure distances in the universe and calculate its rate of expansion.</p>
+        
+            <p>Click the link below for more information on Supernovae!</p>
+            
+            <a href = "supernovae.html" target = "display" id="super"> Supernovae </a>
+        </div>
+            
+        <h2 id="center">Our Star</h2>
+            
+        <div id="sun">
+            <p>The closest star to Earth is the <a href = "sun.html" target = "display">Sun</a>, or as it is referred to, our star!</p>
+        </div>
+         
+        <figure>
+            <figcaption>Diagram explaining the Evolution of Stars</figcaption>
+            <img src="evolution_of_stars_image.jpg" alt="Evolution of Stars" id="clear">
+        </figure> 
+            
+        </main>
+        
+        <aside class="toright">
+            <p>The Types of Stars are:</p>
+            <nav>
+                <ul>
+                    <li><a href = "main_sequence_star.html" target = "_blank">Main Sequence </a></li>
+                    <li><a href = "dwarf star/dwarf_star.html" target = "_blank"> Dwarf </a> </li>
+                    <li><a href = "supergiant star/supergiant_star.html" target = "_blank">Supergiant </a></li>
+                </ul>
+            </nav>
+            
+        </aside>
+        
+        <footer>
+                <a href="#starbanner">Back to Top of Page &uarr;</a>
+                <p>Made by Lilian Ayile Ofik. 2020.</p>
+        </footer> 
+        
+    </body>
+</html>
